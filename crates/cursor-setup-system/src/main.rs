@@ -21,6 +21,9 @@ use std::process::ExitCode;
 
 mod software;
 
+#[cfg(test)]
+mod project_tests;
+
 use harness_runtime::{Harness, LaunchBinding, PreservationSurface, Scoped};
 use provider_v3::{ComponentKind, ProjectionKind, TargetScope};
 
