@@ -15,6 +15,16 @@ cut and that this clone does not carry.
 
 ## [Unreleased]
 
+The existing six-kind project profile has actual public-wire filesystem
+coverage for prepared application, source loss, exact replay, recovery,
+replacement and removal. Credentials, runtime, foreign/shared resources and
+source files are preserved; unsupported paths refuse before control-state writes.
+
+Standalone crates.io packaging now retains all component source modules and
+resolves nested crate paths next to single-colon tokens. CI checks the projected
+package, compiles its tests and reads its executable declaration through Cargo's
+configured target directory. Profile fields and published releases are unchanged.
+
 ## [0.0.94] - 2026-10-13
 
 Forward configuration plans now support explicit preparation before any
